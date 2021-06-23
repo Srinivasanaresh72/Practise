@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<title> CSS TUTORIAL </title>
+<style>
+       *{
+          margin:0px;
+          padding:0;
+         }
+     body{
+           margin-top:20px;
+           margin-left:20px;
+           background-image:url(photo.jpg);
+           background-size:100%;
+         }
+      ul li a{
+               text-decoration:none;
+               color:orange;
+              }
+       ul li:hover{
+                     background-color:green;
+                     color:white;                         
+
+                       }
+
+      ul{
+           list-style-type: none;
+        }
+       ul li{
+              float: left;
+              width:200px;
+              height:40px;
+              line-height:40px;
+              background-color:royalblue;
+              text-align:center;
+              font-size:22px;
+              color:orange;
+              border-radius:20px;
+              opacity:0.5;
+            }
+       ul li ul{
+                 display:none;
+                }
+       ul li:hover > ul{
+                         display:block;
+                       }
+       ul li ul li{
+                    position:relative;
+                  }
+       ul li ul li ul{
+                    position:absolute;
+                    left:200px;
+                    top:0px;
+                  }
+
+</style>   
+</head>
+<body>
+     <ul>
+        <li><a href="https://www.cyient.com/" target="blank"> Home </a></li>
+        <li><a href="https://www.cyient.com/about-us" target="blank"> About us </a></li>
+        <li><a href="https://www.cyient.com/investors/financial-information" target="blank"> Courses </a>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Microsoft_Office" target="blank"> Ms-office </a></li>
+                <li><a href="https://www.w3schools.com/whatis/" target="blank"> Web development </a>
+                     <ul>
+                         <li><a href="https://www.w3schools.com/html/" target="blank"> HTML </a></li>
+                         <li><a href="https://www.w3schools.com/css/" target="blank"> CSS </a></li>
+                         <li><a href="https://www.w3schools.com/js/" target="blank"> Java script </a></li>
+                         <li><a href="https://www.mongodb.com/mern-stack" target="blank"> MERN </a></li> 
+                      </ul>  
+                           
+                </li>
+                <li><a href="https://tallysolutions.com/" target="blank"> tally </a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.cyient.careers/"> careers </a></li>
+        <li><a href="https://www.cyient.careers/#form"> contact us </a></li>
+     </ul>
+
+</body>
+</html>
