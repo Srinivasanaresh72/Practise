@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title> If - Else control statements in JS </title>
+        <script>
+            /* 
+            Q1) Find whether number is even or odd
+            Q2) Find if a number is positive,negative or 0
+            Q3) Find if a number is positive and even
+            */
+            document.write("<h1> If - Else control statements </h1>")
+            var x=5;
+            var y=0;
+            var z=21;
+            if(x%2==0)
+            {
+                document.write("<h2>x is Even Number</h2>");
+            }
+            else
+            {
+                document.write("<h2>x is Odd Number</h2>");
+            }
+
+            if(y>0)
+            {
+                document.write("<h2> y is Positive Number </h2>");
+            }
+            else if(y<0)
+            {
+                document.write("<h2> y is Negative Number</h2>");
+            }
+            else
+            {
+                document.write("<h2> y is neither Positive nor Negative </h2>");
+            }
+
+            if(z>0)
+            {
+                document.write("<h2>z is Positive Number</h2>");
+                if(z%2==0)
+                {
+                    document.write("<h3> z is Even number </h3>");
+                }
+                else
+                {
+                    document.write("<h3> z is positive but odd number</h3>");
+                }
+            }
+            else
+            {
+                document.write("<h2>z is Negative Number</h2>");
+            }
+
+        </script>
+    </head>
+</html>
