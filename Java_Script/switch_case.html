@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title> Switch case in JS </title>
+        <script>
+            /* Q1) Find day of week by accepting its number.
+            eg: 1->sunday 2->monday etc. */
+
+            var day = 1;
+            var week = "Monday";
+            switch(day)
+            {
+                case 1:
+                   document.write("<h1> Sunday </h1>");
+                   break;
+                case 2:
+                   document.write("<h1> Monday </h1>");
+                   break;
+                case 3:
+                   document.write("<h1> Tuesday </h1>");
+                   break;
+                case 4:
+                   document.write("<h1> Wednesday </h1>");
+                   break;
+                case 5:
+                   document.write("<h1> Thursday </h1>");
+                   break;
+                case 6:
+                document.write("<h1> Friday </h1>");
+                   break;
+                case 7:
+                   document.write("<h1> Saturday </h1>");
+                   break;  
+                default:
+                    document.write("<h1> Wrong input </h1>")  ;  
+
+            }
+            switch(week)
+            {
+                case "Monday":
+                    document.write("<h2> First working Day");
+                    break;
+                case "Tuesday":
+                    document.write("<h2> Second working Day");
+                    break;
+                    case "Wednesday":
+                    document.write("<h2> Third working Day");
+                    break;
+                    case "Thursday":
+                    document.write("<h2> Fourth working Day");
+                    break;
+                    case "Friday":
+                    document.write("<h2> Fifth working Day");
+                    break;
+                    case "Saturday":
+                    document.write("<h2> Sixth working Day");
+                    break;
+                    case "Sunday":
+                    document.write("<h2> Weekend day </h2>");
+                    break;    
+
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
