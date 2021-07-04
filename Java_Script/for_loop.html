@@ -1,24 +1,29 @@
 <html>
     <head> 
         <title> For loop in JS </title>
+        
+    </head>
+    <body>
+        <h1 id="mul"></h1>
+        
         <script>
             /* Q1) Print multiplication table of 5 using for loop
                Q2) Print first 5 even numbers 2 4 6 8 10  */
             // For loop is used when the number or iterations is known in advance
             //entry controlled loop
-
+            document.getElementById("mul").innerHTML="Multiplcation of 5"
             for(var x=1;x<=15;x++)
             {
                 document.write("<h2>"+(5*x)+"<h2>");
             }
-
-            for(var y=1;y<=10;y+=2)
+        </script>
+        <h1 id="even"> </h1>
+        <script>
+            document.getElementById("even").innerHTML="Even Numbers upto 10"
+            for(var y=2;y<=10;y+=2)
             {
                 document.write("<h2>"+(y)+"</h2>");
             }
         </script>
-    </head>
-    <body>
-
     </body>
 </html>
