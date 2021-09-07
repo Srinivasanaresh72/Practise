@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Java Script</title>
+</head>
+<body>
+    <h1> My First Java Script </h1>
+    <p> Here, a JavaScript changes the value of the src (source) attribute of an image. </p>
+    
+    <script>
+        function light(off){
+            var pic;
+            if(off == 0){
+                pic = "pic_bulboff.gif";
+            }
+            else{
+                pic = "pic_bulbon.gif";
+            }
+            document.getElementById('image').src = pic;
+        }
+    </script>
+
+    <img id="image" src="pic_bulboff.gif" width = "100" height = "180" />
+
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+    
+</body>
+</html>
